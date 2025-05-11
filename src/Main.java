@@ -7,7 +7,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-            System.out.println("register student : 1, find student : 2, print all students : 3, amend student : 4, delete student : 5, exit : 5");
+            System.out.println("register student : 1\n find student : 2\n print all students : 3\n amend student : 4\n delete student : 5\n exit : 5");
             int choice = sc.nextInt();
             switch (choice) {
                 case 1: // Register a new student
