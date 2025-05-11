@@ -58,6 +58,10 @@ public class Student {
     }
 
     public static int edit_student() {
+        if (students.size() == 0) {
+            System.out.println("no student");
+            return -1;
+        }
         System.out.print("enter name : ");
         String amendName = sc.next();
         for (Student s : Student.students) {
@@ -86,8 +90,17 @@ public class Student {
             }
             else {
                 System.out.println("Name not find");
+                return;
             }
         }
         System.out.println();
+    }
+
+    public static double getAverage() {
+        double sum = 0;
+        for (Student s : Student.students) {
+            sum += s.score;
+        }
+        return sum / students.size();
     }
 }
