@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -6,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-            System.out.println("register student : 1\n find student : 2\n print all students : 3\n amend student : 4\n delete student : 5\n exit : 6");
+            System.out.println("register student : 1\n find student : 2\n print all students : 3\n edit student : 4\n delete student : 5\n exit : 6");
             int choice = sc.nextInt();
             switch (choice) {
                 case 1: // Register a new student
@@ -25,7 +24,7 @@ public class Main {
                     }
                     break;
                 case 4: // Edit student information
-                    System.out.println("amend : 4");
+                    System.out.println("edit student : 4");
                     Student.edit_student();
                     break;
                 case 5: // Delete a student
